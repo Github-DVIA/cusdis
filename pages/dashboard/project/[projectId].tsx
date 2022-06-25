@@ -483,27 +483,6 @@ function Settings(props: {
       onClose={onCloseDeleteProjectModal}
     >
       <AlertDialogOverlay>
-        <AlertDialogContent>
-          <AlertDialogHeader fontSize="lg" fontWeight="bold">
-            Delete Project
-          </AlertDialogHeader>
-
-          <AlertDialogBody>
-            <Text>
-              Are you sure?
-            </Text>
-            <Box mt={2}>
-              <Link fontSize="sm" color="telegram.500" href='/doc#/faq?id=what-if-i-delete-a-project'>What if I delete a project?</Link>
-            </Box>
-          </AlertDialogBody>
-
-          <AlertDialogFooter>
-            <Button ref={cancelDeleteProjectRef} onClick={onCloseDeleteProjectModal}>
-              Cancel
-            </Button>
-            <Button ml={4} colorScheme="red" onClick={_ => deleteProjectMutation.mutate({ projectId: props.project.id })} isLoading={deleteProjectMutation.isLoading}>Delete</Button>
-          </AlertDialogFooter>
-        </AlertDialogContent>
       </AlertDialogOverlay>
     </AlertDialog>
   )
