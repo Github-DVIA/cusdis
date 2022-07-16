@@ -1,9 +1,7 @@
 html {
-
+  font-family: "Noto Serif","Ubuntu", "Noto Serif SC", Arial; 
 }
 
 .font {
-  font-family: 'Montserrat', sans-serif;
-  -webkit-font-smoothing: antialiased;
--moz-osx-font-smoothing: grayscale;
+  font-family: "Noto Serif","Ubuntu", "Noto Serif SC", Arial; 
 }
